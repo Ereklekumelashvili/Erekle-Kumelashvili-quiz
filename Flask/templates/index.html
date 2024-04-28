@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} To-Do list {% endblock %} 
+
+
+{% block content %} 
+    {{ super() }}
+    {% for i in todo %}
+        <p> {{i}} </p>
+    {% endfor %}
+{% endblock %}
